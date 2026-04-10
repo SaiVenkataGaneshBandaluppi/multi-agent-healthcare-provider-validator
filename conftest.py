@@ -11,3 +11,5 @@ os.environ.setdefault("ACCESS_TOKEN_EXPIRE_MINUTES", "30")
 os.environ.setdefault("GROQ_API_KEY", "")
 os.environ.setdefault("ADMIN_USERNAME", "admin")
 os.environ.setdefault("ADMIN_PASSWORD", "testpassword123")
+
+import app.main
