@@ -45,7 +45,7 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-dev.txt
       - name: Run pip-audit
-        run: pip-audit
+        run: pip-audit -r requirements.txt
       - name: Run bandit
         run: bandit -r app/ -lll
       - name: Run tests
