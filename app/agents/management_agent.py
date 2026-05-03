@@ -72,11 +72,14 @@ async def process_single_provider(
     return result
 
 
-async def run_management_agent(providers: list[dict]) -> dict:
+async def run_management_agent(providers: list[dict], groq_key: str = "") -> dict:
     start_time = time.time()
 
     nppes_client = await get_nppes_client()
-    groq_client = get_groq_client()
+    if groq_key:
+        groq_client = GroqClient(api_key=groq_key)
+    else:
+        groq_client = get_groq_client()
 
     tasks = [
         process_single_provider(provider, nppes_client, groq_client)

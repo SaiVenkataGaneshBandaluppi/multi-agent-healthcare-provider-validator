@@ -7,7 +7,7 @@ import uuid
 from typing import Optional
 
 import redis.asyncio as aioredis
-from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
+from fastapi import APIRouter, Depends, Header, HTTPException, Query, Request, status
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -68,9 +68,10 @@ async def validate_providers(
     payload: ValidationRequest,
     db: AsyncSession = Depends(get_db),
     current_user: dict = Depends(get_current_user),
+    x_groq_key: str = Header(default=""),
 ):
     providers_data = [p.model_dump() for p in payload.providers]
-    batch_result = await run_management_agent(providers_data)
+    batch_result = await run_management_agent(providers_data, groq_key=x_groq_key)
 
     for item in batch_result["results"]:
         npi = item.get("npi")

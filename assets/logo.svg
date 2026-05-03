@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
   <rect width="320" height="80" rx="8" fill="#0e1117"/>
-  <rect x="10" y="20" width="40" height="40" rx="6" fill="#1a1d24" stroke="#29b6f6" stroke-width="1.5"/>
-  <line x1="30" y1="28" x2="30" y2="52" stroke="#29b6f6" stroke-width="3" stroke-linecap="round"/>
-  <line x1="18" y1="40" x2="42" y2="40" stroke="#29b6f6" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="60" cy="40" r="4" fill="#00c853"/>
-  <circle cx="72" cy="40" r="4" fill="#00c853" opacity="0.6"/>
-  <circle cx="84" cy="40" r="4" fill="#00c853" opacity="0.3"/>
-  <text x="96" y="44" font-family="monospace" font-size="16" font-weight="bold" fill="#fafafa">Healthcare</text>
-  <text x="96" y="62" font-family="monospace" font-size="11" fill="#29b6f6">Provider Validator</text>
-  <circle cx="295" cy="28" r="8" fill="none" stroke="#00c853" stroke-width="2"/>
-  <polyline points="290,28 294,32 301,24" stroke="#00c853" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="12" y="18" width="44" height="44" rx="6" fill="#1a1d24" stroke="#29b6f6" stroke-width="1.5"/>
+  <line x1="34" y1="26" x2="34" y2="54" stroke="#29b6f6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="20" y1="40" x2="48" y2="40" stroke="#29b6f6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="66" y1="20" x2="66" y2="60" stroke="#2d3139" stroke-width="1"/>
+  <text x="76" y="38" font-family="monospace" font-size="17" font-weight="bold" fill="#fafafa">Healthcare</text>
+  <text x="76" y="58" font-family="monospace" font-size="12" fill="#29b6f6">Provider Validator</text>
+  <circle cx="300" cy="40" r="12" fill="#1a1d24" stroke="#00c853" stroke-width="2"/>
+  <polyline points="294,40 298,44 306,34" stroke="#00c853" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

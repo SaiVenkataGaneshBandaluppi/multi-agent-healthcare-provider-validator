@@ -4,7 +4,6 @@
 
 A production-grade multi-agent AI system for automated healthcare provider directory validation. Four autonomous agents work in parallel to validate NPI numbers, enrich incomplete records, perform quality assurance, and produce a complete audit trail, reducing manual validation time from 20 hours to 3 minutes for 200 providers.
 
-[Demo GIF here]
 
 ## Problem
 
@@ -57,8 +56,8 @@ Four specialized agents orchestrated by LangGraph:
 ## Setup
 
 ```bash
-git clone https://github.com/SaiVenkataGaneshBandaluppi/multi-agent-healthcare-validator.git
-cd multi-agent-healthcare-validator
+git clone https://github.com/SaiVenkataGaneshBandaluppi/multi-agent-healthcare-provider-validator.git
+cd multi-agent-healthcare-provider-validator
 cp .env.example .env
 ```
 

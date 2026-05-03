@@ -134,10 +134,14 @@ with tab_validate:
 
                     with st.spinner("Running multi-agent validation..."):
                         try:
+                            validate_headers = dict(headers)
+                            session_groq_key = st.session_state.get("groq_key", "")
+                            if session_groq_key:
+                                validate_headers["X-Groq-Key"] = session_groq_key
                             resp = requests.post(
                                 f"{base_url}/api/v1/validate",
                                 json={"providers": providers_payload},
-                                headers=headers,
+                                headers=validate_headers,
                                 timeout=180,
                             )
                             resp.raise_for_status()
